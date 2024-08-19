@@ -1,12 +1,15 @@
 const myLibrary = []; 
 let bookEntriesDisplay = document.getElementById("bookEntriesDisplay"); 
 
-function Book(title, genre, pages, read) {
-    this.title = title;
-    this.genre = genre;
-    this.pages = pages;
-    this.read = read;
+class Book {
+    constructor(title, genre, pages, read) {
+        this.title = title;
+        this.genre = genre;
+        this.pages = pages;
+        this.read = read;
+    }
 }
+
 
 function addBookToLibrary() {
     let title = document.getElementById("title").value;
