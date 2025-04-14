@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"></style>
 </head>
 <body>
-    <input type="text" id="title">
-    <input type="text" id="genre">
-    <input type="text" id="pages">
-    <input type="checkbox" id="read">
-    <button type="button" type="submit" id="newBookButton" onclick="addBookToLibrary()">Enter new book</button>
+    <form>
+        <input type="text" id="title" required minlength="3">
+        <input type="text" id="genre" required>
+        <input type="text" id="pages" required>
+        <input type="checkbox" id="read" required>
+        <button type="submit" id="newBookButton" onclick="addBookToLibrary()">Enter new book</button>
+    </form>
+
     <div id="bookEntriesDisplay">Hello</div>
     <script src="script.js"></script>
 
